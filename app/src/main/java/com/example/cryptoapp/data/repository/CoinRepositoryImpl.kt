@@ -6,8 +6,8 @@ import androidx.lifecycle.Transformations
 import com.example.cryptoapp.data.database.AppDatabase
 import com.example.cryptoapp.data.mapper.CoinMapper
 import com.example.cryptoapp.data.network.ApiFactory
-import com.example.domain.CoinInfo
-import com.example.domain.CoinRepository
+import com.example.cryptoapp.domain.CoinInfo
+import com.example.cryptoapp.domain.CoinRepository
 import kotlinx.coroutines.delay
 
 class CoinRepositoryImpl(

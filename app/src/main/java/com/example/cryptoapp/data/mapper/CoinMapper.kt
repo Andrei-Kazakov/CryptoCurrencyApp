@@ -4,7 +4,7 @@ import com.example.cryptoapp.data.database.CoinInfoDbModel
 import com.example.cryptoapp.data.network.model.CoinInfoDto
 import com.example.cryptoapp.data.network.model.CoinInfoJsonContainerDto
 import com.example.cryptoapp.data.network.model.CoinNamesListDto
-import com.example.domain.CoinInfo
+import com.example.cryptoapp.domain.CoinInfo
 import com.google.gson.Gson
 import java.sql.Timestamp
 import java.text.SimpleDateFormat

@@ -1,4 +1,4 @@
-package com.example.domain
+package com.example.cryptoapp.domain
 
 data class CoinInfo(
     val fromSymbol: String,

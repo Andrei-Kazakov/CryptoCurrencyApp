@@ -4,9 +4,9 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.cryptoapp.data.repository.CoinRepositoryImpl
-import com.example.domain.GetCoinInfoListUseCase
-import com.example.domain.GetCoinInfoUseCase
-import com.example.domain.LoadDataUseCase
+import com.example.cryptoapp.domain.GetCoinInfoListUseCase
+import com.example.cryptoapp.domain.GetCoinInfoUseCase
+import com.example.cryptoapp.domain.LoadDataUseCase
 import kotlinx.coroutines.launch
 
 class CoinViewModel(application: Application) : AndroidViewModel(application) {
