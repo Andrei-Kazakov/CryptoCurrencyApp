@@ -2,9 +2,7 @@ package com.example.cryptoapp.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.cryptoapp.R
 import com.example.cryptoapp.databinding.ActivityCoinPriceListBinding
 import com.example.cryptoapp.presentation.adapters.CoinInfoAdapter
 import com.example.domain.CoinInfo
@@ -31,9 +29,10 @@ class CoinPriceListActivity : AppCompatActivity() {
             }
         }
         binding.rvCoinPriceList.adapter = adapter
+        binding.rvCoinPriceList.itemAnimator = null
         viewModel = ViewModelProvider(this)[CoinViewModel::class.java]
-        viewModel.coinInfoList.observe(this, Observer {
-            adapter.coinInfoList = it
-        })
+        viewModel.coinInfoList.observe(this) {
+            adapter.submitList(it)
+        }
     }
 }
